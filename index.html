@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+
+<head>
+</head>
+<style>
+    * {
+        background: skyblue;
+
+    }
+
+    #box {
+        width: 95px;
+        height: 95px;
+        background: black;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: 0s;
+    }
+</style>
+
+<body>
+
+    <button id="box" onmouseenter="start()">catch me</button>
+
+</body>
+<script>
+    function start() {
+        var a = Math.floor(Math.random() * 300);
+
+        var b = Math.floor(Math.random() * 300);
+
+        document.getElementById("box").style.top = a + "px";
+        document.getElementById("box").style.left = b + "px";
+
+    }
+</script>
+
+</html>
